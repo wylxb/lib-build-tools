@@ -1,0 +1,28 @@
+{
+  "name": "@wylxb/cli-builder-rollup",
+  "version": "0.0.1",
+  "description": "wylxb rollup 构建服务",
+  "main": "./lib/index.mjs",
+  "scripts": {
+    "dev": "pnpm clean && WB_ENV=debug tsx watch ./src/index.ts",
+    "build": "tsx ./src/index.ts",
+    "clean": "rimraf lib",
+    "clean:node_modules": "rimraf ./node_modules"
+  },
+  "author": "hoboy",
+  "license": "BSD",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@wylxb/cli-shared-utils": "workspace:^*",
+    "minimist": "^1.2.8",
+    "rollup": "^3.17.1"
+  },
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2"
+  }
+}

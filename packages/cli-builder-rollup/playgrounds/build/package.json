@@ -1,0 +1,8 @@
+{
+  "name": "build",
+  "private": true,
+  "scripts": {
+    "build:js": "rimraf lib && node ../../bin/index.mjs --i src/index.js",
+    "build:ts": "rimraf lib && node ../../bin/index.mjs"
+  }
+}

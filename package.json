@@ -1,29 +1,28 @@
 {
-  "name": "@wylxb/lib-build-tools",
+  "name": "wylxb",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "bin": {
-    "lib-build-tools": "./bin/index.js"
-  },
-  "main": "./lib/index.js",
+  "description": "wylxb 构建服务",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
+    "dev": "pnpm run -r --parallel dev",
+    "build": "pnpm run -r --parallel build"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack",
+    "rollup",
+    "gulp",
+    "swc",
+    "vite"
+  ],
   "author": "hoboy",
   "license": "BSD",
-  "dependencies": {
-    "typescript": "^4.9.5"
-  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/eslint-plugin": "^7.19.1",
-    "@ecomfe/eslint-config": "^7.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
+    "@reskript/config-lint": "^5.7.4",
+    "@types/node": "^18.14.0",
     "eslint": "^8.34.0",
-    "eslint-plugin-import": "^2.27.5"
+    "rimraf": "^4.1.2",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
   }
 }

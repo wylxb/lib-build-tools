@@ -1,0 +1,20 @@
+{
+  "name": "@wylxb/cli-shared-utils",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "wylxb 公共工具包",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsx src/index.ts"
+  },
+  "author": "hoboy",
+  "license": "BSD",
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
+  }
+}
